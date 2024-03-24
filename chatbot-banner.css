@@ -1,0 +1,55 @@
+/* Style for the banner */
+.chatbot-banner {
+  position: fixed;
+  right: 36px;
+  bottom: 110px;
+  width: 250px;
+  height: 40px; /* Adjusted fixed height for the banner */
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid black; /* Thin black outline */
+  font-family: 'Roboto', sans-serif; /* Using Roboto */
+  font-size: 16px; /* Default font size for banner text */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  z-index: 9;
+}
+
+/* Style for the close banner button */
+.close-banner-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 24px; /* Larger text size for the close button for better accessibility */
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif; /* Using Roboto for consistency */
+}
+
+/* Adjustments for the text inside the banner */
+.chatbot-banner p {
+  font-family: 'Roboto', sans-serif; /* Using Roboto */
+  font-size: 14px; /* Slightly smaller text size for the paragraph content */
+  margin: 0; /* Remove default margins */
+  padding-right: 30px; /* Add padding to avoid overlap with the close button */
+}
+
+/* Responsive adjustments for smaller devices for the banner */
+@media screen and (max-device-width: 767px) {
+  .chatbot-banner {
+    right: 10px;
+    bottom: 500px; /* Adjusted for visibility */
+    width: 250px;
+    height: 80px; /* Adjusted height for smaller devices */
+  }
+  .close-banner-btn {
+    font-size: 18px; /* Adjusted 'X' size on mobile devices */
+  }
+}
